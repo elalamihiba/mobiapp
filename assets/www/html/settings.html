@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+ <html>
+  <head>
+   <title>Settings</title>
+    <!-- <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	 <link rel="stylesheet" href="../../jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.css" />
+	 <script src="../../jquery.mobile-1.1.1/jquery-1.7.1.min.js"></script>
+	 <script src="../../jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	-->
+  </head> 
+  
+ <body> 
+ 
+    <div id="about" data-role="page">
+       <script>
+        $('#switch').val(value);
+       </script>
+
+	   <div data-role="header" data-theme="a" data-position="fixed">
+	     <a href="../index.html" data-icon="back" data-theme="b" data-transition="none" >Back</a>
+		 <h1>Settings</h1>
+         <a href="#" id="log" data-theme="b" data-transition="none" >log in</a>
+	   </div><!-- /header -->
+	
+	
+	    <div data-role="content">
+	      <div  data-role="fieldcontain"> 
+           <label for="flip-5">Activer les notifications:</label>
+           <select name="flip-5" id="switch" data-role="slider" data-theme="c" data-track-theme="a" onchange="notif()">
+              <option value="non" >No</option>
+              <option value="oui" >Yes</option>
+           </select>
+		   <a href="#" data-transition="none" onclick="alert(value)">test valeur notification</a>
+         </div>
+       </div>
+
+    </div><!-- /page -->
+
+ </body>
+</html>
